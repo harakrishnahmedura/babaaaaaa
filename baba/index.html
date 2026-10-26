@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Birthday Scrapbook for My Love</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home">♡ Birthday Love</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    <nav id="mainNav" aria-label="Main navigation">
+      <a href="#home" data-page="0" class="active">Home</a>
+      <a href="#letter" data-page="1">A Letter</a>
+      <a href="#soundtrack" data-page="2">Your Birthday Playlist</a>
+      <a href="#reasons" data-page="3">Reasons</a>
+      <a href="#memories" data-page="4">Memories</a>
+      <a href="#forever" data-page="6">Birthday Wishes</a>
+    </nav>
+  </header>
+
+  <main class="book">
+    <div class="page-count"><span id="pageNumber">01</span> <span class="count-divider">/</span> 07</div>
+
+    <section class="page active" id="home" data-title="Home">
+      <div class="hero-panel">
+        <div class="pin">♡</div>
+        <div class="hero-copy">
+          <p class="eyebrow">A little birthday scrapbook</p>
+          <h1>Happy<br><em>Birthday, Baba</em></h1>
+          <p class="hero-subtitle">Celebrating you, my favorite person, and all the happiness you bring into my life.</p>
+          <a class="primary-button" href="#letter" data-page="1">smile before u open char jjmon <span>↗</span></a>
+        </div>
+        <div class="heart-photo photo-frame">
+          <img src="ba1.jpg" alt="home1">
+
+        </div>
+        <div class="anniversary-stamp"><span>your</span><strong>DAY</strong><span>to shine</span></div>
+        <div class="tape tape-one"></div>
+        <div class="tiny-note">today is all<br>about you ♡</div>
+      </div>
+      <div class="home-collage">
+        <article class="mini-card letter-teaser">
+          <span class="script-heading">A Birthday Letter to You</span>
+          <p>For my favorite person, my happiness, and my sweetest adventure.</p>
+          <a href="#letter" data-page="1">Read your letter →</a>
+        </article>
+        <article class="mini-card record-card">
+          <div class="record"></div><div class="record-center">♪</div>
+          <div class="record-label"><span class="script-heading">Your Birthday Playlist</span><small>your birthday soundtrack</small></div>
+        </article>
+        <article class="mini-card reasons-teaser">
+          <span class="script-heading">10 Reasons You Are Amazing</span>
+          <p>Your kindness, your laugh, your hugs, and all the little things.</p>
+          <a href="#reasons" data-page="3">Read the reasons →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="page" id="letter" data-title="A Birthday Letter to You">
+      <div class="paper-page letter-page">
+        <p class="eyebrow">For your special day</p>
+        <h2 class="script-heading">A Birthday Letter to You</h2>
+        <div class="letter-layout">
+          <div class="letter-text">
+            <p>To my favorite person,</p>
+            <p>Happy birthday, my love. Thank you for staying, for loving me, and for making ordinary days feel special. I hope we keep choosing each other, in the happiest moments and in the difficult ones too.</p>
+            <p>Thank you for every laugh, every little check-in, and every memory that has become a favorite of mine. No matter how much time passes, I will always be grateful that our paths crossed.</p>
+            <p>Here’s to more adventures, more pictures, more silly moments, and a love that keeps growing.</p>
+            <p class="signature">Love, your person ♡</p>
+          </div>
+          <div class="film-strip">
+            <img src="ba002.jpg" alt="Couple smiling">
+            <img src="home1.jpg" alt="Couple together">
+            <img src="baba02.jpg" alt="Hands held together">
+          </div>
+        </div>
+        <span class="page-doodle">with all my heart ♡</span>
+      </div>
+    </section>
+
+    <section class="page" id="soundtrack" data-title="Your Birthday Playlist">
+      <div class="paper-page soundtrack-page">
+        <div class="playlist-layout">
+          <div class="playlist-cover">
+            <div class="playlist-photo-frame">
+              <img src="music.jpg" alt="Replace with your favorite couple photo">
+              <span class="photo-sticker">♡</span>
+            </div>
+            <div class="mini-player-controls" aria-label="Music controls">
+              <span>↶</span><span>▮</span><button id="songButton" type="button" aria-label="Play or pause Exist for Love">▶</button><span>▾</span><span>↻</span>
+            </div>
+            <div class="cover-caption">a song that feels like us ♡</div>
+          </div>
+          <div class="playlist-main">
+            <div class="playlist-status"><span class="status-bars">▂▅▇</span><span class="sound-icon">)))</span></div>
+            <div class="track-time" id="trackTime">10:29</div>
+            <p class="playlist-kicker">A LITTLE LOVE NOTE IN MUSIC</p>
+            <h2 class="playlist-title">A song for you<br><em>Baba...</em></h2>
+            <div class="waveform" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="track-meta"><strong>Exist for Love</strong><span>AURORA</span></div>
+            <div class="volume-battery"><span>♫  ♫</span><span>♡ 82%</span></div>
+          </div>
+          <div class="playlist-lyrics playlist-video-panel">
+            <div class="lyrics-heading"><span>NOW PLAYING · LYRIC VIDEO</span><span class="lyrics-heart">♡</span></div>
+            <div class="lyric-video-frame">
+              <video id="lyricVideo" preload="metadata" playsinline poster="" aria-label="AURORA — Exist For Love lyric video">
+                <source src="AURORA.mp4" type="video/mp4">
+                Your browser does not support embedded video.
+              </video>
+              <div class="video-placeholder" id="videoPlaceholder">
+                <span class="video-play-mark">▶</span>
+                <strong>Exist for Love</strong>
+                <span>AURORA · LYRIC VIDEO</span>
+                <small>mwamwa</small>
+              </div>
+            </div>
+            <div class="lyrics-footer">a tiny soundtrack for my favorite person ✧</div>
+            <p class="lyrics-note" id="musicMessage">"thank you so much for everything. iloveyou.”.</p>
+          </div>
+          <video id="lyricVideoAudio" class="hidden-video" preload="metadata" playsinline aria-hidden="true"><source src="AURORA - Exist For Love (Lyric Video).mp4" type="video/mp4"></video>
+          <span class="playlist-doodle doodle-heart">♡</span><span class="playlist-doodle doodle-star">✦</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="page" id="reasons" data-title="Reasons You Are Amazing">
+      <div class="paper-page reasons-page">
+        <p class="eyebrow">Little things, big feelings</p>
+        <h2 class="script-heading">10 Reasons You Are Amazing</h2>
+        <p class="center-text">A few of the countless reasons you make life brighter.</p>
+        <div class="reasons-grid">
+          <div class="reason"><b>01</b><span>Your kind heart</span></div>
+          <div class="reason"><b>02</b><span>The way you make me laugh</span></div>
+          <div class="reason"><b>03</b><span>You listen to me</span></div>
+          <div class="reason"><b>04</b><span>Your warm hugs</span></div>
+          <div class="reason"><b>05</b><span>Your patience with me</span></div>
+          <div class="reason"><b>06</b><span>How you support my dreams</span></div>
+          <div class="reason"><b>07</b><span>Our silly conversations</span></div>
+          <div class="reason"><b>08</b><span>The little things you remember</span></div>
+          <div class="reason"><b>09</b><span>How safe I feel with you</span></div>
+          <div class="reason"><b>10</b><span>Simply because you are you</span></div>
+        </div>
+        <p class="bottom-note">And a million more reasons. ♡</p>
+      </div>
+    </section>
+
+    <section class="page" id="memories" data-title="Favorite Memories">
+      <div class="paper-page memories-page">
+        <p class="eyebrow">Favorite moments</p>
+        <h2 class="script-heading">Favorite Memories</h2>
+        <p class="center-text">A few snapshots of your favorite memories and happiest moments.</p>
+        <div class="memory-board">
+          <figure class="polaroid tilt-left"><img src="ja.jpg" alt="Celebration"><figcaption>little moments</figcaption></figure>
+          <figure class="polaroid tilt-right"><img src="va.jpg" alt="Couple outdoors"><figcaption>little moments</figcaption></figure>
+          <figure class="polaroid tilt-up"><img src="va1.jpg" alt="Couple holding hands"><figcaption>little moments</figcaption></figure>
+          <figure class="polaroid tilt-down"><img src="va3.jpg" alt="Holding hands"><figcaption>little moments</figcaption></figure>
+          <figure class="polaroid tilt-left"><img src="va5.jpg" alt="Friends and loved ones"><figcaption>little moments</figcaption></figure>
+          <figure class="polaroid tilt-right"><img src="va6.jpg" alt="Happy couple"><figcaption>little moments</figcaption></figure>
+          <figure class="polaroid tilt-left"><img src="ru.jpg" alt="Celebration"><figcaption>little moments</figcaption></figure>
+          <figure class="polaroid tilt-right"><img src="bi.jpg" alt="Couple outdoors"><figcaption>little moments</figcaption></figure>
+          <figure class="polaroid tilt-up"><img src="ru1.jpg" alt="Couple holding hands"><figcaption>little moments</figcaption></figure>
+          <figure class="polaroid tilt-down"><img src="ru2.jpg" alt="Holding hands"><figcaption>little moments</figcaption></figure>
+          <figure class="polaroid tilt-left"><img src="ru3.jpg" alt="Friends and loved ones"><figcaption>little moments</figcaption></figure>
+          <figure class="polaroid tilt-right"><img src="ru4.jpg" alt="Happy couple"><figcaption>little moments</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="page" id="forever" data-title="Birthday Card">
+      <div class="forever-card">
+        <div class="lace-border">
+          <div class="forever-photo"><img src="last.jpg" alt="Couple together"></div>
+          <p class="script-heading love-you">I Love You</p>
+          <p class="forever-message">Today is all about celebrating the wonderful person you are. Wishing you all the best among the best.May all your plans and sacrifices be paid someday and I wish you'll stay being kind, loving, smart, friendly, understanding, optimistic, and more as you are. I love you so much and I pray for you always.</p>
+          <div class="forever-heart">♥</div>
+          <p class="signature">Happy birthday, my love.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="page-controls">
+      <button id="prevPage" class="nav-button" disabled>← Previous</button>
+      <span id="pageTitle">Home</span>
+      <button id="nextPage" class="nav-button">Next →</button>
+    </div>
+  </main>
+  <footer>Made with love, just for your birthday ♡</footer>
+  <script src="script.js"></script>
+</body>
+</html>
